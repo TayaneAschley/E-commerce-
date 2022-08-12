@@ -1,0 +1,65 @@
+/* cabecalho */
+
+.btn-login-header button {
+  color: var(--color-texto4);
+  background-color: var(---color-background-branco);
+}
+
+/* titulo cards */
+
+.titulo-da-secao {
+  width: 85%;
+  height: 9vh;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.titulo-da-secao a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--color-texto4);
+}
+
+.titulo-da-secao img {
+  margin-left: 15px;
+  width: 19px;
+  height: 19px;
+}
+/* cards */
+.card-promocao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(https://trello.com/1/cards/628539a3e2fd8a02a9a72c72/attachments/628539a3e2fd8a02a9a72ca4/previews/628539a3e2fd8a02a9a72cac/download/banner-image.png)
+    center no-repeat;
+  background-size: cover;
+  color: var(--color-texto);
+  width: 100%;
+  height: 25em;
+}
+
+.card-promocao .descricao-promo {
+  margin-left: 10em;
+  width: 40%;
+}
+
+.descricao-promo h1 {
+  font-size: 3em;
+}
+
+.descricao-promo button {
+  align-items: center;
+  width: 9em;
+  height: 3em;
+  margin-top: 2em;
+
+  background-color: var(--color-input-azul);
+}
+
+/* rodape */
