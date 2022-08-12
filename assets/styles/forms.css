@@ -1,0 +1,124 @@
+html{
+  overflow-x: hidden;
+}
+
+.cabecalho {
+  background-color: var(---color-background-branco);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 14.8rem;
+}
+
+
+.container-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+  background-color: var( --color-background-cinza );
+  
+}
+
+.container-formulario h1 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.formulario-login , .formulario-cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 1rem;
+}
+
+.formulario-cadastro h1, .formulario-login h1{
+  margin-bottom: 2.2rem; 
+}
+
+.input-form{
+  font-size: 1.2rem;
+  width: 25rem;
+  height: 3.5rem;
+  padding: 0px 1rem;
+  border-bottom: 1px solid var(--color-border-input);
+  color: var(--color-texto3);
+  cursor: pointer;
+  transition: 0.7s ;
+}
+
+.input-form:focus{
+  color:var(--color-texto2) ;
+  border: 1px solid var(--color-border-input);
+  background-color: var( --color-input-azul-hover2);
+}
+
+#input-submit-login {
+  background-color: var(--color-input-azul);
+  color: var(--color-texto);
+  height: 3.8rem;
+  width: 27rem;
+  border-bottom: none;
+}
+
+#input-submit-adicionar{
+  background-color: var(--color-input-azul);
+  color: var(--color-texto);
+  height: 3.8rem;
+  width: 29.5rem;
+  border-bottom: none;
+}
+
+
+footer {
+  margin-top: 0px;
+  
+}
+
+@media screen and (max-width: 1300px){
+
+  html{
+  font-size: 70%;
+}
+
+.cabecalho{
+  margin: 0px;
+  margin-left: 4rem;
+  }
+
+.logo-header img {
+  width: 100px;
+  }
+
+  .container-formulario{
+    height: 50vh;
+  }
+
+.formulario-login{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+  }
+}
+
+@media screen and (max-width: 714px){
+  html{
+    font-size:60% ;
+  }
+  .cabecalho-items input[type="search"] {
+    display: none;
+  }
+   
+}
+
+@media screen and (max-width: 280px){
+
+  html{
+    font-size: 40%;
+  }
+}

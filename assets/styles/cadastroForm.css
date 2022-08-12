@@ -1,0 +1,7 @@
+#error{
+  background-color: var(--color-input-azul);
+  height: 3.8rem;
+  width: 27rem;
+  border-bottom: none;
+  color: red;
+}
