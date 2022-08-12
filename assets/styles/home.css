@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800;900&display=swap");
+
+:root {
+  ---color-background-branco: #ffffff;
+  --color-background-azul: #eaf2fd;
+  --color-background-cinza: #f5f5f5;
+
+  --color-input-cinza: #f5f5f5;
+  --color-input-azul: #2a7ae4;
+  --color-input-azul-hover: #5595e9;
+  --color-input-azul-hover2: #d4e4fa;
+
+  --color-texto: #ffffff;
+  --color-texto2: #464646;
+  --color-texto3: #A2A2A2;
+  --color-texto4: #2a7ae4;
+
+  --color-border-input: #C8C8C8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  font-size: 1.1rem;
+  width: 12rem;
+  height: 3.2rem;
+  color: var(--color-texto);
+  border: 1px solid var(--color-input-azul);
+  cursor: pointer;
+}
+
+input{
+  font-size: 1.1rem;
+  outline: none;
+  color: var(--color-texto);
+}
+
+
+.cabecalho {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 7rem;
+  overflow-x: hidden;
+}
+
+.cabecalho-items {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho-items input[type="search"] {
+  width: 35rem;
+  height: 2.5rem;
+  padding: 1rem;
+  margin-left: 2.5rem;
+  border-radius: 20px;
+  color: var(--color-texto2);
+  background-color: var(--color-input-cinza);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  overflow-x: hidden;
+}
+
+.produtos-starWars,
+.produtos-console,
+.produtos-diversos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 16rem;
+  height: 20rem;
+  margin-left: 2rem;
+  overflow-x: hidden;
+}
+
+.produtos .card-img{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-img img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+.informacoes-produto {
+  color: #464646;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+.informacoes-produto .texto-produto, .informacoes-produto .valor-produto{
+  margin-top: .5rem;
+  font-size: 1.1rem;
+}
+
+.informacoes-produto .valor-produto{
+  margin-bottom: .5rem;
+}
+
+.informacoes-produto a{
+  color:  var(--color-texto4);
+  font-weight: 650;
+} 
+
+.valor-produto {
+  font-weight: 700;
+  
+}
+

@@ -1,0 +1,235 @@
+html{
+  overflow-x: hidden;
+  
+}
+
+.cabecalho {
+  background-color: var(---color-background-branco);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.btn-administrador button {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-texto4);
+  background-color: var(---color-background-branco);
+}
+
+.container-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+  background-color: var( --color-background-cinza );
+}
+
+.container-formulario h1{
+  text-align: left;
+  margin-bottom: 3rem;
+  width: 30%;
+}
+
+.formulario-adicionar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  gap: 1rem;
+}
+
+.input-form{
+  font-size: 1.1rem;
+  width: 40rem;
+  height: 3rem;
+  border-bottom: 1px solid var(--color-border-input);
+  color: var(--color-texto3);
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  cursor: pointer;
+  transition: 0.7s ;
+  
+}
+.input-form:focus{
+  color:var(--color-texto2) ;
+  border: 1px solid var(--color-border-input);
+  background-color: var( --color-input-azul-hover2);
+}
+
+#input-submit-adicionar {
+  background-color: var(--color-input-azul);
+  color: var(--color-texto);
+  width: 41rem;
+  height: 8rem;
+  font-family: "Raleway", sans-serif;
+  border-bottom: none;
+}
+
+
+textarea{
+  font-family: "Raleway", sans-serif;
+  width: 41rem;
+}
+
+footer{
+  margin: 0px;
+}
+
+@media screen and (max-width: 1024px){
+  html{
+    font-size:70% ;
+  }
+  .cabecalho-items input[type="search"] {
+    display: none;
+  }
+   
+  .formulario-adicionar{
+    height: 55vh;
+  }
+
+  .container-formulario h1{
+    display: flex;
+    text-align: start;
+    margin: 0px;
+    margin-bottom: 1rem;
+    width: 67%;
+  }
+
+  .input-form{
+    font-size: 1.6rem;
+    width: 60rem;
+    height: 3rem;
+    padding-top: 2rem;
+  }
+
+  textarea{
+    font-family: "Raleway", sans-serif;
+    width: 61rem;
+    height: 15rem;
+  }
+
+  #input-submit-adicionar {
+    background-color: var(--color-input-azul);
+    color: var(--color-texto);
+    width: 61rem;
+    height: 7rem;
+    font-size: 1.3rem;
+    font-family: "Raleway", sans-serif;
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size:60% ;
+  }
+  
+  .formulario-adicionar{
+    height: 55vh;
+  }
+
+  .container-formulario h1{
+    display: flex;
+    text-align: start;
+    margin: 0px;
+    margin-bottom: 1rem;
+    width: 76%;
+  }
+
+  .input-form{
+    font-size: 1.6rem;
+    width: 60rem;
+    height: 3rem;
+    padding-top: 2rem;
+  }
+
+  textarea{
+    font-family: "Raleway", sans-serif;
+    width: 61rem;
+    height: 15rem;
+  }
+
+  #input-submit-adicionar {
+    background-color: var(--color-input-azul);
+    color: var(--color-texto);
+    width: 61rem;
+    height: 7rem;
+    font-size: 1.3rem;
+    font-family: "Raleway", sans-serif;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 614px){
+  html{
+    font-size: 50%;
+  }
+
+  .container-formulario h1{
+    width: 80%;
+    margin: 0px;
+  }
+
+  #input-submit-adicionar {
+   font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  html{
+    font-size: 60%;
+  }
+
+  .logo-header img {
+    width: 100px;
+  }
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: var( --color-background-cinza );
+  }
+  
+  .container-formulario h1{
+    margin: 0px;
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .input-form{
+    width: 28rem;
+    height: 1.8rem;
+    
+  }
+
+  textarea{
+    font-family: "Raleway", sans-serif;
+    width: 28.9rem;
+    height: 7rem;
+  }
+
+  #input-submit-adicionar {
+    background-color: var(--color-input-azul);
+    color: var(--color-texto);
+    width: 28.4rem;
+    height: 4rem;
+    font-family: "Raleway", sans-serif;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 280px){
+
+  html{
+    font-size: 40%;
+  }
+}

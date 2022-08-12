@@ -1,0 +1,141 @@
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 4rem;
+  color: var(--color-texto2);
+  background-color: var(--color-background-azul);
+  overflow-x: hidden;
+}
+
+.rodape {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 25rem;
+}
+
+/* coluna logo */
+
+/* coluna contato */
+.infoContato {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-weight: 510;
+}
+
+.infoContato a {
+  color: var(--color-texto2);
+}
+/* coluna formulario */
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contato p {
+  color: var(--color-texto2);
+  font-size: 1.3rem;
+  font-weight: 650;
+  margin-bottom: 1rem;
+}
+
+.formulario-contato input[type="text"] {
+  width: 35rem;
+  height: 3.1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-texto2);
+  background-color: var(---color-background-branco);
+}
+
+.formulario-contato textarea {
+  font-family: "Raleway", sans-serif;
+  outline: none;
+}
+
+.btn input[type="submit"] {
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  background-color: var(--color-input-azul);
+  font-family: "Raleway", sans-serif;
+}
+
+.dedicatoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  font-weight: 600;
+  background-color: var(---color-background-branco);
+}
+
+@media screen and (max-width:1000px) {
+  .rodape {
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40vh;
+    gap: 7px;
+  }
+
+}
+
+@media screen and (height:720px){
+  .rodape {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+  }
+ }
+
+
+@media screen and (max-width:669px) {
+
+  .rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+  }
+
+  .rodape .logo-footer{
+  align-items: center;
+
+  }
+
+  .infoContato{
+    text-align: center;
+  }
+}
+
+@media screen and (height:480px){
+  .rodape {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    
+  }
+ }
+@media screen and (max-width:433px) {
+
+    .formulario-contato input[type="text"] {
+      width: 20rem;
+      height: 3.1rem;
+      margin-bottom: 1rem;
+      color: var(--color-texto2);
+      background-color: var(---color-background-branco);
+    }
+  }
+
+  @media screen and (max-width:280px) {
+    .rodape {
+      display: flex;
+      flex-direction: column;
+      height: 65vh;
+    }
+  }
